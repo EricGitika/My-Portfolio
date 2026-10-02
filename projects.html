@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects</title>
+
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+    <nav>
+            <a href="./index.html">Home</a>
+            <a href="#skills">Skills</a>
+    </nav>
+
+
+    <section id="work" class="work-section">
+    <div class="section-header">
+      <h2>These are some of my projects;</h2>
+    </div>
+
+    <div class="work-grid">
+
+      <div class="work-card">
+        <img src="./arch drawing.jpg" alt="Habitat Studio Project" decoding="async" loading="lazy" width="600" height="320">
+        <div class="work-card-info" id="habitat-card">
+          <h3> Habitat Studio</h3>
+          <p>Habitat Studio is a webstite for an architectutral farm based in Nairobi connecting architects with clients.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="./pexels-polina-tankilevitch-3873150.jpg" alt="PrimeCare Pharmacy" loading="lazy" decoding="async" width="600" height="320">
+        <div class="work-card-info">
+          <span class="work-tag">Coming Soon</span>
+          <h3>PrimeCare Pharmacy</h3>
+          <p>PrimeCare Pharmacy is a modern pharmacy which makes it easy for customers to buy their medicines from home.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="./car dearlership.jpg" alt="Car dealership" loading="lazy" decoding="async" width="600" height="320">
+        <div class="work-card-info">
+          <span class="work-tag">Coming Soon</span>
+          <h3>Auto World</h3>
+          <p>Auto World is a modern car dealership which makes it easy for customers to buy their vehicles from home.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="./techstore.jpg" alt="Tech store" loading="lazy" decoding="async" width="600" height="320">
+        <div class="work-card-info">
+          <span class="work-tag">Coming Soon</span>
+          <h3>Geeks Tech</h3>
+          <p>Geeks Tech is a modern tech store which makes it easy for customers to buy their electronic devices from home.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="./grocery store.jpg" alt="Evergreen Store" loading="lazy" decoding="async" width="600" height="320">
+        <div class="work-card-info">
+          <span class="work-tag">Coming Soon</span>
+          <h3>Evergreen Store</h3>
+          <p>Evergreen Store is a modern grocery store which makes it easy for customers to buy their groceries from home.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="./solar.jpg" alt="Destiny Solar" loading="lazy" decoding="async" width="600" height="320">
+        <div class="work-card-info">
+          <span class="work-tag">Coming Soon</span>
+          <h3>Destiny Solar</h3>
+          <p>Destiny solar is a company that specializes in solar energy solutions.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+<section id="skills">
+    <h2>Skills</h2>
+    <h3>Apart from web development, I have acquired various skills over the years;</h3>
+    <h3>Here are some of the skills I have acquired over time;</h3>
+    
+        <div class="skills-grid">
+            <div class="skills-card">
+                <div class="skills-photo">
+                    <img src="./flambe'.jpg" alt="Architect Gitika— Founder & Lead Designer" />
+                </div>
+                <h3>Cooking</h3>
+                <p>I am skilled in preparing a variety of dishes and enjoy experimenting with different cuisines and flavors.</p>
+            </div>
+
+            <div class="skills-card">
+                <div class="skills-photo">
+                    <img src="./gaming.jpg" alt=" — Senior Architect" />
+                </div>
+                <h3>Gaming</h3>
+                <p>I have a strong passion for gaming and enjoy spending time exploring new games and genres.</p>
+            </div>
+
+            <div class="skills-card">
+                <div class="skills-photo">
+                    <img src="./painting.jpg" alt=" — Interior Stylist" />
+                </div>
+                <h3>Painting</h3>
+                <p>I am a passionate painter with experience in various mediums and styles.</p>
+            </div>
+</section>
+
+
+<script>
+  const habitatCard = document.getElementById("habitat-card");
+  const habitatUrl = "https://ericgitika.github.io/Final-Project/index.html";
+
+  // Make the card clickable
+  habitatCard.addEventListener("click", function () {
+    window.open(habitatUrl, "_blank", "noopener");
+  });
+
+  // Keyboard accessibility (Enter or Space)
+  habitatCard.setAttribute("tabindex", "0");
+  habitatCard.setAttribute("role", "link");
+  habitatCard.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      window.open(habitatUrl, "_blank", "noopener");
+    }
+  });
+</script>
+</body>
+</html>
